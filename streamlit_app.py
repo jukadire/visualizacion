@@ -1,5 +1,3 @@
-﻿# -*- coding: utf-8 -*-
-
 import os
 import streamlit as st
 import pandas as pd
@@ -131,6 +129,4 @@ fig = px.line(city_data, x='AQI', y=selected_pollutant, markers=True, title=f"{s
 
 fig.update_layout(xaxis_title="Date", yaxis_title=f"{selected_pollutant} Concentration", template="plotly_white")
 st.plotly_chart(fig, use_container_width=True)
-
-
 
